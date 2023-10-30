@@ -35,7 +35,7 @@ class _TransformPageState extends State<TransformPage>
           builder: (context, child) {
             double angle = mt.pi * _animationController.value;
             return Transform(
-              // origin: const Offset(0.5, 0.5),
+              origin: const Offset(0.5, 0.5),
               transform: Matrix4.identity()..setEntry(3, 2, 0.002)..rotateY(angle),
               alignment: Alignment.center,
               child: Container(
